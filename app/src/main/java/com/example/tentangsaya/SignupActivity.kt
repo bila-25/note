@@ -18,6 +18,8 @@ class SignupActivity : AppCompatActivity() {
 
         databaseHelper = DatabaseHelper(this)
 
+
+
         binding.signupButton.setOnClickListener {
             val username = binding.signupUsername.text.toString()
             val password = binding.signupPassword.text.toString()

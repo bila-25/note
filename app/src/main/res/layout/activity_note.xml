@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Informasi Diri -->
+    <TextView
+        android:id="@+id/notesDiaryHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notes Diary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/poppins"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/userInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama: Keysha Salsa Bila\nKelas: XII RPL 2\nAbsen: 17"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppins"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- RecyclerView untuk daftar catatan -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="16dp"
+        android:scrollbars="vertical"/>
+
+    <!-- Layout untuk tombol Back dan Tambah Catatan -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginBottom="16dp">
+
+        <!-- Tombol Back -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@drawable/baseline_arrow_back_24"
+            app:backgroundTint="@color/orange"
+            android:contentDescription="Kembali"/>
+
+        <!-- Tombol Tambah Catatan -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/baseline_add_24"
+            app:backgroundTint="@color/orange"
+            android:contentDescription="Tambah Catatan"/>
+    </LinearLayout>
+
+</LinearLayout>

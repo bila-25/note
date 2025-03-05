@@ -42,6 +42,13 @@ class MainActivity : AppCompatActivity() {
                 finishAffinity() // Menutup semua aktivitas setelah delay
             }, 300) // Delay 300ms agar suara sempat terdengar
         }
+
+        val notedButton: Button = findViewById(R.id.noted_button)
+        notedButton.setOnClickListener {
+            playSound()
+            val intent = Intent(this, NoteActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     // Fungsi playSound dipindahkan ke luar onCreate

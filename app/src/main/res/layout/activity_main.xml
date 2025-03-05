@@ -81,18 +81,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
-    <Button
-        android:id="@+id/kalkulator_button"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="88dp"
-        android:layout_marginBottom="15dp"
-        android:text="masuk ke kalkulator"
-        app:layout_constraintBottom_toTopOf="@+id/icon_scroll_view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
-
     <HorizontalScrollView
         android:id="@+id/icon_scroll_view"
         android:layout_width="0dp"
@@ -207,7 +195,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="about bila"
+        android:text="project bila"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -240,14 +228,13 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/bila" />
+                    android:src="@drawable/calculator" />
 
-                <TextView
-                    android:layout_width="0dp"
+                <Button
+                    android:id="@+id/kalkulator_button"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_weight="1"
-                    android:text="bila" />
+                    android:text="kalkulator"/>
             </LinearLayout>
 
             <LinearLayout
@@ -259,14 +246,14 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/bila" />
+                    android:src="@drawable/note" />
 
-                <TextView
-                    android:layout_width="0dp"
+                <Button
+                    android:id="@+id/noted_button"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_weight="1"
-                    android:text="bila" />
+                    android:text="noted"/>
+
             </LinearLayout>
 
             <LinearLayout
